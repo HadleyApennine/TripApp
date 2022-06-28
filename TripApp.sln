@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripGUI", "TripGUI\TripGUI.csproj", "{B8EE0D90-9552-4310-9CF1-FEABF659B902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripEF", "TripEF\TripEF.csproj", "{B2493E0D-F27B-43CB-BAA8-5F2B2F7572E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripLIB", "TripLIB\TripLIB.csproj", "{2E0748FC-EF27-4FC0-935E-0F487B70598F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8EE0D90-9552-4310-9CF1-FEABF659B902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8EE0D90-9552-4310-9CF1-FEABF659B902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8EE0D90-9552-4310-9CF1-FEABF659B902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8EE0D90-9552-4310-9CF1-FEABF659B902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2493E0D-F27B-43CB-BAA8-5F2B2F7572E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2493E0D-F27B-43CB-BAA8-5F2B2F7572E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2493E0D-F27B-43CB-BAA8-5F2B2F7572E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2493E0D-F27B-43CB-BAA8-5F2B2F7572E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0748FC-EF27-4FC0-935E-0F487B70598F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0748FC-EF27-4FC0-935E-0F487B70598F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0748FC-EF27-4FC0-935E-0F487B70598F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0748FC-EF27-4FC0-935E-0F487B70598F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
