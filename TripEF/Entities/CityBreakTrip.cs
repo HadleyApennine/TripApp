@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using TripEF.Services;
 
 namespace TripEF.Entities;
 
-public class CityBreakTrip 
+public class CityBreakTrip : IEntityBase
 {
     [Key] public int TripID { get; set; }
 
