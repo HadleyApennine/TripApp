@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using TripEF;
+using TripEF.Entities;
 using TripEF.TripServices;
 
 namespace TripGUI.Views;
@@ -12,6 +13,7 @@ public partial class MountainTripView : UserControl
     {
         InitializeComponent();
         _service = new MountainTripService(new AppDbContextFactory());
+        Get();
     }
 
     public  void Get()
@@ -39,6 +41,12 @@ public partial class MountainTripView : UserControl
 
     private void Add_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        if (Name.Text != null)
+        {
+            _service.AddAsync(new MountainTrip(){Name=Name.Text});
+            Name.Text = "";
+            Get();
+            MessageBox.Show("Added successfully!");
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using TripEF;
+using TripEF.Entities;
 using TripEF.TripServices;
 
 namespace TripGUI.Views;
@@ -39,6 +40,12 @@ public partial class SeaTripView : UserControl
 
     private void Add_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        if (Name.Text != null)
+        {
+            _service.AddAsync(new SeaTrip(){Name=Name.Text});
+            Name.Text = "";
+            Get();
+            MessageBox.Show("Added successfully!");
+        }
     }
 }
