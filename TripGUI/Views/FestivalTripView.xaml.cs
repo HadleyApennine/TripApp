@@ -24,7 +24,9 @@ public partial class FestivalTripView : UserControl
     
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        dynamic content = ((Button)sender).DataContext;
+        Window window = new FestivalTripUpdate(content.TripID);
+        window.Show();
     }
 
     private void DeleteButton_Click(object sender, RoutedEventArgs e)

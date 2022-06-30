@@ -32,7 +32,11 @@ public partial class CityBreakTripView : UserControl
 
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        dynamic content = ((Button)sender).DataContext;
+        Window window = new CityBreakTripUpdate(content.TripID);
+        window.Show();
+        
+
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)

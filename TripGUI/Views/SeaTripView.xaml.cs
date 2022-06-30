@@ -24,6 +24,9 @@ public partial class SeaTripView : UserControl
     
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
+        dynamic content = ((Button)sender).DataContext;
+        Window window = new SeaTripUpdate(content.TripID);
+        window.Show();
     }
 
     private void DeleteButton_Click(object sender, RoutedEventArgs e)

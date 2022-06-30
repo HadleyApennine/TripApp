@@ -31,7 +31,9 @@ public partial class MountainTripView : UserControl
 
     private void UpdateButton_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        dynamic content = ((Button)sender).DataContext;
+        Window window = new MountainTripUpdate(content.TripID);
+        window.Show();
     }
 
     private void Refresh_Click(object sender, RoutedEventArgs e)
