@@ -7,7 +7,7 @@
         xmlns:views="clr-namespace:TripGUI.Views"
         xmlns:viewmodels="clr-namespace:TripGUI.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Projekt " Height="450" Width="800">
     
     <Window.Resources>
         <DataTemplate x:Name="seatrip" DataType="{x:Type viewmodels:SeaTripViewModel}">
