@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TripEF\TripEF.csproj" />
-      <ProjectReference Include="..\TripLIB\TripLIB.csproj" />
     </ItemGroup>
 
 </Project>

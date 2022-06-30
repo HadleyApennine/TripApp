@@ -19,8 +19,6 @@
       </PackageReference>
     </ItemGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\TripLIB\TripLIB.csproj" />
-    </ItemGroup>
+   
 
 </Project>

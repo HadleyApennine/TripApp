@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:TripGUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <DockPanel 
+            Background="Aquamarine"
+            Grid.Row="0"
+            Grid.Column="0" 
+            Grid.RowSpan="5">
+            <StackPanel>
+                <Button Content="Sea Trips" Margin="30"  Click="SeaTrips_Click"/>
+                <Button Content="City Break Trip" Margin="30"  Click="CityBreakTrip_Click"/>
+                <Button Content="Festival Trip" Margin="30"  Click="FestivalTrip_Click"/>
+                <Button Content="Mountain Trip" Margin="30"  Click="MountainTrip_Click"/>
+            </StackPanel>
+        </DockPanel>
+        
+        <ContentControl  
+            Grid.Row="0" 
+            Grid.Column="1"
+            Grid.RowSpan="5"
+            Grid.ColumnSpan="4"
+            Content="{Binding}"></ContentControl>
+        
     </Grid>
 </Window>
