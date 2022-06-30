@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TripGUI.Views;
 
 namespace TripGUI
 {
@@ -27,22 +28,22 @@ namespace TripGUI
 
         private void SeaTrips_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new SeaTripView();
         }
 
         private void CityBreakTrip_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new CityBreakTripView();
         }
 
         private void FestivalTrip_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new FestivalTripView();
         }
 
         private void MountainTrip_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            DataContext = new MountainTripView();
         }
     }
 }

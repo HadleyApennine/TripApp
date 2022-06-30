@@ -4,8 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TripGUI"
+        xmlns:views="clr-namespace:TripGUI.Views"
+        xmlns:viewmodels="clr-namespace:TripGUI.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
+    <Window.Resources>
+        <DataTemplate x:Name="seatrip" DataType="{x:Type viewmodels:SeaTripViewModel}">
+            <views:SeaTripView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="citybreaktrip" DataType="{x:Type viewmodels:CityBreakTripViewModel}">
+            <views:CityBreakTripView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="mountaintrip" DataType="{x:Type viewmodels:MountainTripViewModel}">
+            <views:MountainTripView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="festivaltrip" DataType="{x:Type viewmodels:FestivalTripViewModel}">
+            <views:FestivalTripView DataContext="{Binding}" />
+        </DataTemplate>
+    </Window.Resources>
     
     <Grid>
         <Grid.ColumnDefinitions>
