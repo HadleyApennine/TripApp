@@ -20,10 +20,6 @@ public class EntityBaseService<T> : IEntityBaseService<T> where T : class, IEnti
         } // (w tym miejscu ten oboekt przestaje istniec)
     }
 
-/// <summary>
-///  Funkcja która updateuje rekord w bazie danych
-/// </summary>
-/// <param name="entity"></param>
     public void Update(T entity)
     {
         using AppDbContext appContext = _context.CreateDbContext(); // deklarujemy obiekt na czas zycia miedzy klamrami

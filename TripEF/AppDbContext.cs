@@ -19,6 +19,10 @@ public class AppDbContext : DbContext
     {
     }
 
+    /// <summary>
+    /// Metoda ktora wymusza posiadanie dla kazdego rekordu ID
+    /// </summary>
+    /// <param name="modelBuilder"></param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<CityBreakTrip>().HasKey(e => e.TripID);
